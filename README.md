@@ -1,3 +1,24 @@
 # 2022HCI-PJ1-ActivityClassifier
-ios App\n
-利用手机内置的运动传感器对向左、向右手势及挥手动作进行简单识别
+### Model
+**Create ML**
+
+**Input:** AccelerationX, AccelerationY, AccelerationZ, GyroX, GyroY, GyroZ
+
+**Output:** Label, LabelProbability
+
+**Labels:** Waving, Left, Right, Stable
+
+
+
+
+### App
+**SwiftUI**
+
+Gather detector data at a time interval of 0.03, update model result every 3 seconds and print it on screen simultaneously.
+
+
+
+### Data
+Using _Sensor Logger_ on phone to collect data upon every movement.
+
+About 120 training data for each label class on average.
